@@ -1,0 +1,34 @@
+parameters:
+  cors.config:
+    enabled: true
+    # Allow requests from the Node.js project running on localhost:3000
+    allowedOrigins:
+      - 'http://localhost:3000'
+    # Allow common HTTP methods
+    allowedMethods:
+      - 'GET'
+      - 'POST'
+      - 'PUT'
+      - 'PATCH'
+      - 'DELETE'
+      - 'OPTIONS'
+      - 'HEAD'
+    # Allow common headers needed for API requests
+    allowedHeaders:
+      - 'Content-Type'
+      - 'Authorization'
+      - 'X-CSRF-Token'
+      - 'X-Requested-With'
+      - 'Accept'
+      - 'Origin'
+      - 'Access-Control-Request-Method'
+      - 'Access-Control-Request-Headers'
+    # Expose headers that the client might need
+    exposedHeaders:
+      - 'X-Drupal-Cache-Tags'
+      - 'X-Drupal-Cache-Contexts'
+      - 'X-Drupal-Cache-Max-Age'
+    # Cache preflight requests for 1 hour
+    maxAge: 3600
+    # Allow credentials (cookies, authorization headers)
+    supportsCredentials: true
