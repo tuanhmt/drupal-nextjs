@@ -24,6 +24,8 @@
         "drupal/devel": "^5.5",
         "drupal/jsonapi_extras": "^3.28",
         "drupal/next": "^2.0",
+        "drupal/openapi": "^2.3",
+        "drupal/openapi_jsonapi": "^3.0",
         "drupal/simple_oauth_password_grant": "^2.1",
         "drush/drush": "^13.7"
     },
@@ -105,6 +107,10 @@
                 "  * Remove the plugin that prints this message:",
                 "      composer remove drupal/core-project-message"
             ]
+        },
+        "composer-exit-on-patch-failure": true,
+        "patchLevel": {
+            "drupal/core": "-p2"
         },
         "patches": {
             "drupal/decoupled_router": {

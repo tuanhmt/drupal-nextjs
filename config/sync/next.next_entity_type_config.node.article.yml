@@ -1,0 +1,9 @@
+uuid: eaa189fd-99c5-4156-80a8-a4040dc87950
+langcode: en
+status: true
+dependencies: {  }
+id: node.article
+site_resolver: ''
+configuration: {  }
+revalidator: ''
+revalidator_configuration: {  }

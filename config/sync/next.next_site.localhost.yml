@@ -1,0 +1,11 @@
+uuid: 8ad05dab-61ad-405c-8e9f-2d86a86896ba
+langcode: en
+status: true
+dependencies: {  }
+id: localhost
+label: Localhost
+base_url: 'http://localhost:3000'
+preview_url: 'http://localhost:3000/api/draft'
+preview_secret: S9PzswAxNlooeYdMdCGMUJoBIO1YyZPM
+revalidate_url: 'http://localhost:3000/api/revalidate'
+revalidate_secret: jdqWscNe8pH4AqRVjHbTPyk4aNAOvVRq

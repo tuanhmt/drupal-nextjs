@@ -1,0 +1,22 @@
+uuid: 09ce7576-adc1-47ee-be46-0ae797040aea
+langcode: en
+status: true
+dependencies: {  }
+id: admin
+name: admin
+description: 'Test admin scope'
+grant_types:
+  refresh_token:
+    status: true
+    description: ''
+  authorization_code:
+    status: true
+    description: ''
+  client_credentials:
+    status: true
+    description: ''
+umbrella: false
+parent: _none
+granularity_id: role
+granularity_configuration:
+  role: administrator
