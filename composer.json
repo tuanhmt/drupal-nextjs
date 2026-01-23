@@ -16,7 +16,8 @@
     ],
     "require": {
         "composer/installers": "^2.3",
-        "cweagans/composer-patches": "^2.0",
+        "cweagans/composer-patches": "^1",
+        "drupal/commerce": "^3.2",
         "drupal/core-composer-scaffold": "^11.3",
         "drupal/core-project-message": "^11.3",
         "drupal/core-recipe-unpack": "^11.3",
@@ -32,7 +33,7 @@
     "conflict": {
         "drupal/drupal": "*"
     },
-    "minimum-stability": "stable",
+    "minimum-stability": "RC",
     "prefer-stable": true,
     "config": {
         "allow-plugins": {
@@ -113,8 +114,17 @@
             "drupal/core": "-p2"
         },
         "patches": {
-            "drupal/decoupled_router": {
-                "Unable to resolve path on node in other language than default": "https://www.drupal.org/files/issues/2024-08-05/decouple_router-3111456-resolve-language-issue-63--get-translation-re-rolled-and-good-redirect.patch"
+            "drupal/next": {
+                "Fix implicit nullable deprecation bug": "patches/drupal_next_fix_implicit_nullable_deprecation_bug.patch"
+            },
+            "drupal/schemata": {
+                "Fix implicit nullable deprecation bug": "https://www.drupal.org/files/issues/2025-05-08/3523349-2.patch"
+            },
+            "drupal/subrequests": {
+                "Fix implicit nullable deprecation bug": "https://www.drupal.org/files/issues/2025-09-15/php-84-deprecation-implicitly-marking-parameter-as-nullable-3524429-6_0.patch"
+            },
+            "drupal/openapi": {
+                "Fix implicit nullable deprecation bug": "https://www.drupal.org/files/issues/2025-05-08/3523346-php-84-2.patch"
             }
         }
     },
