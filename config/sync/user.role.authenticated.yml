@@ -6,6 +6,8 @@ dependencies:
     - filter.format.basic_html
   module:
     - comment
+    - commerce_order
+    - commerce_product
     - file
     - filter
     - search
@@ -24,3 +26,5 @@ permissions:
   - 'search content'
   - 'skip comment approval'
   - 'use text format basic_html'
+  - 'view commerce_product'
+  - 'view own commerce_order'

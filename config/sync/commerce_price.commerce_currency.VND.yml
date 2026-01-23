@@ -1,0 +1,9 @@
+uuid: 582f05e9-4699-45f0-8c45-e850badbe37f
+langcode: en
+status: true
+dependencies: {  }
+currencyCode: VND
+name: 'Vietnamese Dong'
+numericCode: '704'
+symbol: ₫
+fractionDigits: 0

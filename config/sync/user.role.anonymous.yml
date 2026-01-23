@@ -6,6 +6,7 @@ dependencies:
     - filter.format.restricted_html
   module:
     - comment
+    - commerce_product
     - filter
     - search
 _core:
@@ -18,3 +19,4 @@ permissions:
   - 'access comments'
   - 'search content'
   - 'use text format restricted_html'
+  - 'view commerce_product'
