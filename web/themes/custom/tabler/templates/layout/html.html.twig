@@ -1,0 +1,30 @@
+{#
+/**
+ * @file
+ * Theme override for the basic structure of the page.
+ * Tabler UI: https://docs.tabler.io/ui/getting-started/installation
+ *
+ * Available variables:
+ * - html_attributes: HTML attributes for the page.
+ * - html_attributes.class: Array of classes for the html element.
+ * - head_title: Page title.
+ * - head_title_array: List of text to be used as page title.
+ * - page: Rendered page content.
+ */
+#}
+<!doctype html>
+<html{{ html_attributes.addClass('tabler-theme') }}>
+  <head>
+    <head-placeholder token="{{ placeholder_token }}">
+    <title>{{ head_title|safe_join(' | ') }}</title>
+    <css-placeholder token="{{ placeholder_token }}">
+    <js-placeholder token="{{ placeholder_token }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body{{ attributes }}>
+    {{ page_top }}
+    {{ page }}
+    {{ page_bottom }}
+    <js-bottom-placeholder token="{{ placeholder_token }}">
+  </body>
+</html>

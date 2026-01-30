@@ -1,0 +1,11 @@
+{#
+/**
+ * @file
+ * Theme override for local actions (primary tabs, etc.) with Tabler styling.
+ */
+#}
+{% if content %}
+  <div{{ attributes.addClass('btn-list', 'mb-3') }}>
+    {{ content }}
+  </div>
+{% endif %}

@@ -1,0 +1,23 @@
+name: Tabler
+type: theme
+description: 'A custom Drupal theme built on Tabler UI — responsive, modern dashboard and admin interface.'
+package: Custom
+core_version_requirement: ^10 || ^11
+base theme: false
+
+regions:
+  header: Header
+  navbar: Navbar
+  sidebar: Sidebar
+  page_header: 'Page header'
+  content: Content
+  sidebar_second: 'Sidebar second'
+  footer: Footer
+
+libraries:
+  - tabler/global-styling
+  - tabler/tabler
+
+libraries-override:
+  system/base: {}
+  core/drupal: {}

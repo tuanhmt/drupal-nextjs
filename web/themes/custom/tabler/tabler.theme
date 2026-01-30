@@ -1,0 +1,29 @@
+<?php
+
+/**
+ * @file
+ * Functions to support theming in the Tabler theme.
+ */
+
+use Drupal\Core\Theme\ThemeSettings;
+
+/**
+ * Implements hook_preprocess_HOOK() for page templates.
+ */
+function tabler_preprocess_page(&$variables) {
+  // Add body classes for layout variants.
+  if (!empty($variables['page']['sidebar'])) {
+    $variables['attributes']['class'][] = 'has-sidebar';
+  }
+}
+
+/**
+ * Implements hook_preprocess_HOOK() for block templates.
+ */
+function tabler_preprocess_block(&$variables) {
+  // Add Tabler utility classes to block titles in sidebars.
+  $region = $variables['elements']['#configuration']['region'] ?? '';
+  if (in_array($region, ['sidebar', 'sidebar_second'], TRUE) && !empty($variables['title'])) {
+    $variables['title_attributes']['class'][] = 'nav-link-title';
+  }
+}
