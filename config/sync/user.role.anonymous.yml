@@ -5,7 +5,6 @@ dependencies:
   config:
     - filter.format.restricted_html
   module:
-    - comment
     - commerce_product
     - filter
     - search
@@ -16,7 +15,6 @@ label: 'Anonymous user'
 weight: 0
 is_admin: false
 permissions:
-  - 'access comments'
   - 'search content'
   - 'use text format restricted_html'
   - 'view commerce_product'

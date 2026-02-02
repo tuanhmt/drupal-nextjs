@@ -1,0 +1,22 @@
+uuid: 9a537d87-d6d9-48df-9496-d9a7b24f8142
+langcode: en
+status: true
+dependencies:
+  theme:
+    - tabler
+_core:
+  default_config_hash: ydSxdq7R66I8UMC460rOzlfzvlUL4VRbdwc6z9DWaUI
+id: tabler_secondary_local_tasks
+theme: tabler
+region: header
+weight: -2
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Secondary tabs'
+  label_display: '0'
+  provider: core
+  primary: false
+  secondary: true
+visibility: {  }

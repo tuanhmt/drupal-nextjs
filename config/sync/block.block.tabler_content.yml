@@ -1,0 +1,22 @@
+uuid: ecc94bbe-1f4f-4c1b-9620-286cf69907e9
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - tabler
+_core:
+  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
+id: tabler_content
+theme: tabler
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }
